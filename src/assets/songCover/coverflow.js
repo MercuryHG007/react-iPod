@@ -1,16 +1,16 @@
-import beheneDeImage from './behenedeImage.jpg'
-import mohmohkedaageImage from './mohmohkedaageImage.jpg'
-import orangrezImage from './orangrezImage.jpg'
-import phirleayadilImage from './phirleayadilImage.jpg'
-import phirseuddchalaImage from './phirseuddchalaImage.jpg'
-import terenainaImage from './terenainaImage.jpg'
+import beheneDeImage from './behenedeImage.jpg';
+import mohmohkedaageImage from './mohmohkedaageImage.jpg';
+import orangrezImage from './orangrezImage.jpg';
+import phirleayadilImage from './phirleayadilImage.jpg';
+import phirseuddchalaImage from './phirseuddchalaImage.jpg';
+import terenainaImage from './terenainaImage.jpg';
 
-import beheneDeSong from '../songs/behenedeSong.mp3'
-import mohmohkedaageSong from '../songs/mohmohkedaageSong.mp3'
-import orangrezSong from '../songs/orangrezSong.mp3'
-import phirleayadilSong from '../songs/phirleayadilSong.mp3'
-import phirseuddchalaSong from '../songs/phirseuddchalaSong.mp3'
-import terenainaSong from '../songs/terenainaSong.mp3'
+import beheneDeSong from '../songs/behenedeSong.mp3';
+import mohmohkedaageSong from '../songs/mohmohkedaageSong.mp3';
+import orangrezSong from '../songs/orangrezSong.mp3';
+import phirleayadilSong from '../songs/phirleayadilSong.mp3';
+import phirseuddchalaSong from '../songs/phirseuddchalaSong.mp3';
+import terenainaSong from '../songs/terenainaSong.mp3';
 
 const coverFlow = [
 
