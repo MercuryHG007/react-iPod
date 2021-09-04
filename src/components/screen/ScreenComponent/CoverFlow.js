@@ -8,7 +8,7 @@ function CoverFlow () {
     const { activeState } = useContext(AppContent);
 
     return(
-        <div>
+        <div className="coverflow">
             <NotificationBar />
             <Coverflow 
                 width={100}
