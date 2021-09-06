@@ -1,10 +1,10 @@
 import React from 'react';
-import gameImage from '../../../assets/games/game.png'
+import assets from '../../../assets/assets';
 
 const Games = () => {
     return(
         <div className="gameContainer">
-            <img src={gameImage} alt="GameImage" />
+            <img src={assets.card} alt="GameImage" />
         </div>
     )
 }
