@@ -1,6 +1,6 @@
 const data = [
     [ 'Cover Flow', 'Music', 'Games', 'Settings' ],
-    [ 'Artists', 'Albims' ],
+    [ 'Artists', 'Albums' ],
     [ 'Behene De', 'Moh Moh Ke Dhaage', 'O Rangrez', 'Phir Le Aya Dil', 'Phir Se Udd Chala', 'Tere Naina' ]
 ];
 
