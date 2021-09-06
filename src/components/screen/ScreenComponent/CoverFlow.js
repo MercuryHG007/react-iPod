@@ -2,10 +2,10 @@ import React, {useContext} from 'react';
 import NotificationBar from './NotificationBar';
 import Coverflow from 'react-coverflow';
 import coverflowData from '../../../assets/songCover/coverflow';
-import { AppContent } from '../../../context/playContext';
+import { AppContext } from '../../../context/playContext';
 
 function CoverFlow () {
-    const { activeState } = useContext(AppContent);
+    const { activeState } = useContext(AppContext);
 
     return(
         <div className="coverflow">

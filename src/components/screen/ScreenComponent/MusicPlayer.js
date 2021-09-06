@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import NotificationBar from './NotificationBar';
-import { coverflow } from '../../../assets/songCover/coverflow';
+import coverFlow from '../../../assets/songCover/coverflow';
 import ReactAudioPlayer from 'react-audio-player';
 import { AppContext } from '../../../context/playContext';
 import { data } from '../../../data/data';
@@ -23,24 +23,24 @@ const MusicPlayer = () => {
 
                 if(audio.currentTime === audio.duration){
                     setSongID((prevState) =>
-                        prevState === coverflow.length - 1 ? 0 : prevState + 1
+                        prevState === coverFlow.length - 1 ? 0 : prevState + 1
                     )
                 }
 
                 let min = parseInt(ct / 60);
                 let sec = parseInt(ct % 60);
 
-                timeDOM.innerHTML = sec < 10 ? `${min}:0${sec}` : `${min}:${sec}` 
+                timeDOM.innerText = sec < 10 ? `${min}:0${sec}` : `${min}:${sec}` 
             }, 1000)
         }
-    }, [play] )
+    }, [play, setSongID] )
 
     const setDuration = () => {
         let duration = parseInt(getElement('audio'.duration));
         let min = parseInt(duration / 60);
         let sec = parseInt(duration % 60);
 
-        getElement('time').innerHTML = sec < 10 ? `${min}:0${sec}` : `${min}:${sec}`
+        getElement('time').innerText = sec < 10 ? `${min}:0${sec}` : `${min}:${sec}`
     }
 
     const playerBar = () => {
@@ -58,7 +58,7 @@ const MusicPlayer = () => {
         )
     }
 
-    let track = coverflow[songID];
+    let track = coverFlow[songID];
 
     const startMusic = () => {
         document.title = `iPod.js | ${track.album}`
@@ -92,7 +92,7 @@ const MusicPlayer = () => {
             </div>
 
             <div>
-            
+
                 <ReactAudioPlayer 
                     className='audio'
                     src={track.src}

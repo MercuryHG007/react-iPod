@@ -4,7 +4,7 @@ const data = [
     [ 'Behene De', 'Moh Moh Ke Dhaage', 'O Rangrez', 'Phir Le Aya Dil', 'Phir Se Udd Chala', 'Tere Naina' ]
 ];
 
-const coverFlow = [
+const coverflow = [
     'Behene De', 
     'Moh Moh Ke Dhaage', 
     'O Rangrez', 
@@ -26,6 +26,6 @@ const settings = [
 
 export {
     data,
-    coverFlow,
+    coverflow,
     settings
 }

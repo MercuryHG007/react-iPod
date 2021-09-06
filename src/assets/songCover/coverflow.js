@@ -12,7 +12,7 @@ import phirleayadilSong from '../songs/phirleayadilSong.mp3';
 import phirseuddchalaSong from '../songs/phirseuddchalaSong.mp3';
 import terenainaSong from '../songs/terenainaSong.mp3';
 
-const coverFlow = [
+const coverflow = [
 
     { _id: 0, name: "Behene De", images: beheneDeImage, src: beheneDeSong, artist: "Various Artist", album: "Raavan"},
     { _id: 1, name: "Moh Moh Ke Dhaage", images: mohmohkedaageImage, src: mohmohkedaageSong, artist: "Various Artist", album: "Dum Laga Ke Haisha"},
@@ -23,4 +23,4 @@ const coverFlow = [
 
 ]
 
-export default coverFlow;
+export default coverflow;

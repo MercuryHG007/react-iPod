@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import assets from '../../../assets/assets';
-import { AppContent } from '../../../context/playContext';
+import { AppContext } from '../../../context/playContext';
 import { settings } from '../../../data/data';
 
 function Settings () {
-    const { activeState } = useContext(AppContent);
+    const { activeState } = useContext(AppContext);
     return(
         <div className="setting">
             <div className="settingContainer">

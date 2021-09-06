@@ -1,10 +1,10 @@
 import arrowright from './icons/arrowright.svg';
 import battery from './icons/battery.svg';
 import card from './icons/card.png';
-import fastforword from './icons/fastforword.svg';
+import fastforward from './icons/fastforward.svg';
 import gameIcon from './games/game.png';
-import highVolume from './icons/highVolume.svg';
-import lowVolume from './icons/lowVolume.svg';
+import highVolume from './icons/highVolume.png';
+import lowVolume from './icons/lowVolume.png';
 import ipodlogo from './icons/ipodlogo.svg';
 import menu from './icons/menu.svg';
 import pause from './icons/pause.svg';
@@ -17,7 +17,7 @@ const assets = {
     arrowright,
     battery,
     card,
-    fastforword,
+    fastforward,
     gameIcon,
     highVolume,
     lowVolume,
