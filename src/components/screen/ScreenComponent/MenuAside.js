@@ -19,7 +19,7 @@ const MenuAside = () => {
 
     const GamesImg = () => {
         return(
-            <div className='gamesBackground'>
+            <div className='games bg'>
                 <img src={assets.gameIcon} alt=''/>
                 <div>Games</div>
             </div>
@@ -28,7 +28,7 @@ const MenuAside = () => {
 
     const Settings = () => {
         return(
-            <div className='settingsBackground'>
+            <div className='settings bg'>
                 <img src={assets.reacticon} alt='' />
                 <div>iPod.js</div>
                 <div>By Harshit Garg</div>

@@ -187,7 +187,7 @@ const App = () => {
                 onClick={handleMenuClick}
               />
               <img
-                src={assets.play_pause}
+                src={assets.playpause}
                 className='play_pause'
                 alt=''
                 onClick={handlePlayAndPause}

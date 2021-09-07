@@ -12,19 +12,20 @@ function CoverFlow () {
             <NotificationBar />
             <Coverflow 
                 width={100}
-                height={235}
+                height={280}
                 displayQuantityOfSide={1}
                 enableHeading={false}
-                actie={activeState}
+                active={activeState}
             >
-                {coverflowData.map((item) => (
-                    <img 
-                        key={item._id} 
-                        src={item.images} 
-                        alt={item.name}
-                    />
-                ))}
-            </Coverflow>
+                
+            {coverflowData.map((item) => (
+                <img 
+                    key={item._id} 
+                    src={item.images} 
+                    alt={item.name}
+                />
+            ))}
+            </Coverflow>            
         </div>
     )
 }

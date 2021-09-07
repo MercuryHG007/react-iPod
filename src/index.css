@@ -9,13 +9,14 @@
 }
 /* body tag */
 .body {
-  height: 570px;
-  width: 380px;
+  height: 670px;
+  min-width: 480px;
   box-shadow: rgb(85, 85, 85) 0px 0px 2.4em inset;
-  -webkit-box-reflect: below 0px -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), color-stop(0.5, transparent), to(rgba(250, 250, 250, 0.3)));
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, 0% 0%, 0% 120%, from(transparent), color-stop(0.5, transparent), to(rgba(250, 250, 250, 0.3)));
   border-radius: 30px;
-  background: linear-gradient(rgb(227, 227, 227) 0%, rgb(214, 214, 214) 100%);
+  background: linear-gradient(rgb(227, 227, 227) -35%, rgb(250, 50, 240) 100%);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* min-width: fit-content; */
 }
 
 .cont {
@@ -43,6 +44,10 @@
   height: 220px;
 }
 
+.screen > div{
+  height: 100%;
+}
+
 /* roate button style */
 
 .buttons {
@@ -61,14 +66,18 @@
   border: 1px solid rgb(185, 185, 185);
   width: 88px;
   height: 88px;
-  box-shadow: rgb(191, 191, 191) 0px 1em 3em inset;
+  box-shadow: rgb(255, 107, 240) 0px 1em 3em inset;
   border-radius: 50%;
   margin: auto;
-  background: rgb(225, 225, 225);
+  background: rgb(250, 50, 240);
 }
 
 .inner-disk:active {
   box-shadow: rgb(158, 158, 158) 0px 1em 3em inset;
+}
+
+.inner-disk img:hover{
+  background: black;
 }
 
 .menu {
@@ -85,6 +94,7 @@
   left: 93px;
   max-height: 13px;
   user-select: none;
+  
 }
 
 .fastforward {
@@ -148,13 +158,14 @@
   box-shadow: black 0px 0px 24px;
   background-color: white;
   height: 99.9%;
-  width: 45%;
+  min-width: 40%;
   border-top-left-radius: 0.2rem;
   position: relative;
   z-index: 5;
 }
 
 .list {
+  /* margin: auto; */
   font-weight: bold;
   text-align: start;
 }
@@ -181,8 +192,8 @@
   display: none;
 }
 
-/* coverfow */
-.slideShow img {
+/* coverflow */
+.slideshow img {
   position: absolute;
   height: 100%;
   background-size: contain;
@@ -191,6 +202,10 @@
 .slideShow {
   transition: height 0.5s;
 }
+
+/* .coverflow__figure__3bk_C {
+  width: 100px;
+} */
 
 .slides {
   transition: opacity 0.5s;
@@ -205,33 +220,43 @@
 }
 
 /* games */
-.games img {
-  width: 100px;
-  margin: 70px;
-  margin-left: -70px;
+.games {
+  width: 400px;
+  /* margin: 70px; */
+  /* margin-left: -100px; */
 }
 
 .games div {
   position: absolute;
-  bottom: 22%;
-  left: 22%;
+  bottom: 13%;
+  left: 26%;
   color: white;
   text-transform: capitalize;
 }
 
+.games img {
+  height: 175px;
+  /* width: 150px; */
+  margin-left: -140px;
+  margin-top: 50px;
+}
+
 /* settings */
 .settings img {
-  margin: 90px;
-  margin-left: -50px;
-  height: 50px;
+  /* margin: ; */
+  margin-left: -155px;
+  margin-top: 60px;
+  height: 100px;
 }
 
 .settings div {
-  position: absolute;
-  bottom: 35%;
-  left: 22%;
+  /* position: absolute; */
+  /* bottom: 35%;
+  left: 22%; */
+  margin: 11px 155px 0px 0px;
   color: white;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 /* coverflow */
@@ -239,10 +264,13 @@
   position: absolute;
   z-index: 100;
   background: white;
-  height: 100%;
-  width: -webkit-fill-available;
   pointer-events: none !important;
   user-select: none !important;
+  width: 432px;
+  /* max-width: 100%;
+}
+.coverflow img {
+  width: 100px; */
 }
 .coverflow__stage__14oqC {
   user-select: none !important;
@@ -365,17 +393,16 @@
 }
 
 /* ---------- games --------------- */
-.gm {
-  height: 100%;
+.gameContainer {
+  height: 302px;
+  width: 435px;
   background: linear-gradient(rgb(177, 181, 192) 0%, rgb(104, 110, 122) 100%);
-  position: absolute;
   z-index: 100;
-  top: 0px;
-  width: -webkit-fill-available;
 }
 
-.gm img {
+.gameContainer img {
   height: 60%;
+  width: 50%;
   padding: 50px;
 }
 
@@ -383,11 +410,12 @@
 .setting {
   padding-top: 20px;
   position: absolute;
-  top: 0px;
+  top: 24px;
   bottom: 0px;
   z-index: 100;
   background: white;
-  width: -webkit-fill-available;
+  width: 430px;
+  height: 200px;
 }
 
 .setting img {
