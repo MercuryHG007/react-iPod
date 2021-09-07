@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
 }
+
 /* body tag */
 .body {
   height: 670px;
@@ -25,7 +26,7 @@
   position: relative;
 }
 
-/* screen style */
+/* ------------ screen style ------------------- */
 .screen {
   pointer-events: none;
   user-select: none;
@@ -49,7 +50,7 @@
   height: 100%;
 }
 
-/* roate button style */
+/* ---------------- rotate button style ------------------ */
 
 .buttons {
   border: 1px solid rgb(185, 185, 185);
@@ -114,7 +115,7 @@
   user-select: none;
 }
 
-/* inside screen style */
+/* ---------------- inside screen style --------------- */
 .inside-screen {
   height: 100%;
   width: 100%;
@@ -166,7 +167,6 @@
 }
 
 .list {
-  /* margin: auto; */
   font-weight: bold;
   text-align: start;
 }
@@ -176,7 +176,7 @@
   text-transform: capitalize;
 }
 
-/* shows active class style */
+/* ---------------- shows active class style------------- */
 .active {
   color: white;
   background: linear-gradient(rgb(60, 184, 255) 0%, rgb(52, 122, 181) 100%);
@@ -193,7 +193,7 @@
   display: none;
 }
 
-/* coverflow */
+/* ----------------- coverflow ---------------- */
 .slideshow img {
   position: absolute;
   height: 100%;
@@ -203,10 +203,6 @@
 .slideShow {
   transition: height 0.5s;
 }
-
-/* .coverflow__figure__3bk_C {
-  width: 100px;
-} */
 
 .slides {
   transition: opacity 0.5s;
@@ -220,11 +216,9 @@
   background: linear-gradient(rgb(177, 181, 192) 0%, rgb(104, 110, 122) 100%);
 }
 
-/* games */
+/* ----------- games ----------- */
 .games {
   width: 400px;
-  /* margin: 70px; */
-  /* margin-left: -100px; */
 }
 
 .games div {
@@ -237,23 +231,18 @@
 
 .games img {
   height: 175px;
-  /* width: 150px; */
   margin-left: -140px;
   margin-top: 50px;
 }
 
 /* settings */
 .settings img {
-  /* margin: ; */
   margin-left: -155px;
   margin-top: 60px;
   height: 100px;
 }
 
 .settings div {
-  /* position: absolute; */
-  /* bottom: 35%;
-  left: 22%; */
   margin: 11px 155px 0px 0px;
   color: white;
   font-weight: 400;
@@ -269,10 +258,7 @@
   user-select: none !important;
   width: 432px;
   height: 200px;
-  /* max-width: 100%;
-}
-.coverflow img {
-  width: 100px; */
+
 }
 .coverflow__stage__14oqC {
   user-select: none !important;
@@ -281,6 +267,7 @@
 }
 
 /* ---------- music --------------- */
+
 /* music player style */
 .name {
   left: 15% !important;

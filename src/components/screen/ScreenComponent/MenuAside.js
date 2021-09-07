@@ -17,6 +17,7 @@ const MenuAside = () => {
         },6000)
     },[])
 
+    // window to display while Hovering on Games in MenuList 
     const GamesImg = () => {
         return(
             <div className='games bg'>
@@ -26,6 +27,7 @@ const MenuAside = () => {
         )
     }
 
+    // window to display while Hovering on Settings in MenuList 
     const Settings = () => {
         return(
             <div className='settings bg'>

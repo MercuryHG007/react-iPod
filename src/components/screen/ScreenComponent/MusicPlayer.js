@@ -9,6 +9,8 @@ const MusicPlayer = () => {
     const { play, songID, setSongID } = useContext(AppContext);
     const [fillBar, setFillBar] = useState();
 
+    let track = coverFlow[songID];
+
     const getElement = (element) => {
         return document.getElementsByClassName(element)[0];
     }
@@ -35,6 +37,7 @@ const MusicPlayer = () => {
         }
     }, [play, setSongID] )
 
+    // Set the duration of song in the HTML element 
     const setDuration = () => {
         let music = getElement('audio');
         let duration = parseInt(getElement(music.duration));
@@ -44,6 +47,7 @@ const MusicPlayer = () => {
         getElement('time').innerText = sec < 10 ? `${min}:0${sec}` : `${min}:${sec}`
     }
 
+    // Display Song Progress Bar
     const playerBar = () => {
         let audio = getElement('audio');
         let barWidth = getElement('fillup');
@@ -58,8 +62,6 @@ const MusicPlayer = () => {
             }, duration*10)
         )
     }
-
-    let track = coverFlow[songID];
 
     const startMusic = () => {
         document.title = `iPod.js | ${track.album}`
@@ -99,7 +101,6 @@ const MusicPlayer = () => {
                     src={track.src}
                     onLoadedMetadata={() => startMusic()}
                 />
-
                 <span className='timer' > 0.00 </span>
                 <div className='fillup' />
                 <span className='time' > 0.00 </span>

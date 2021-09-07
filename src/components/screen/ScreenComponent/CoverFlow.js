@@ -10,6 +10,7 @@ function CoverFlow () {
     return(
         <div className="coverflow">
             <NotificationBar />
+            {/* Songs Cover Flow */}
             <Coverflow 
                 width={100}
                 height={280}
@@ -25,7 +26,8 @@ function CoverFlow () {
                     alt={item.name}
                 />
             ))}
-            </Coverflow>            
+            </Coverflow>  
+            {/*  TODO// SONG TITLE COVERFLOW */}
         </div>
     )
 }

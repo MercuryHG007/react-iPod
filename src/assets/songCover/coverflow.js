@@ -1,3 +1,4 @@
+// importing Song Thumbnails
 import beheneDeImage from './behenedeImage.jpg';
 import mohmohkedaageImage from './mohmohkedaageImage.jpg';
 import orangrezImage from './orangrezImage.jpg';
@@ -5,6 +6,7 @@ import phirleayadilImage from './phirleayadilImage.jpg';
 import phirseuddchalaImage from './phirseuddchalaImage.jpg';
 import terenainaImage from './terenainaImage.jpg';
 
+// importing Songs
 import beheneDeSong from '../songs/behenedeSong.mp3';
 import mohmohkedaageSong from '../songs/mohmohkedaageSong.mp3';
 import orangrezSong from '../songs/orangrezSong.mp3';

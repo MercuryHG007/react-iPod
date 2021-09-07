@@ -15,12 +15,14 @@ function Settings () {
             </div>
 
             <div className="text"> MADE BY HARSHIT GARG  </div>
+
             {settings.map((item, index) => (
                 <div
                     key={item.name}
                     id='setting-item'
                     className={index === activeState ? 'active' : ''}
                 >
+                    {/* Profile links */}
                     <a
                         className="url"
                         href={item.url}
@@ -29,8 +31,10 @@ function Settings () {
                     >
                         {item.name}
                     </a>
+                    
                 </div>
             ))}
+
         </div>
     )
 }

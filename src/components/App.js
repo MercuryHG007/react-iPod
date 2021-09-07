@@ -28,9 +28,10 @@ const App = () => {
     setActiveComponent  
   } = useContext(AppContext);
 
+  // function for get element by class
   const getElement = (element) => {
     return document.getElementsByClassName(element)[0];
-}
+  }
 
   const increaseActive = (length) => {
     setActiveState((prevState) => {
@@ -49,6 +50,8 @@ const App = () => {
       return nextActive
     })
   }
+
+  // Display Volume on Increasing or Decreasing
   const showIcon = (vol) => {
     let volumeDom = getElement('volumeController');
     volumeDom.innerHTML = 
@@ -64,6 +67,7 @@ const App = () => {
     
   }
 
+  // Handle Volume Increase
   const increaseVolume = () => {
     let audio = getElement('audio');
 
@@ -72,6 +76,7 @@ const App = () => {
     showIcon(audio.volume)
   }
 
+  // Handle Volume Decrease
   const decreaseVolume = () => {
     let audio = getElement('audio');
 
@@ -120,6 +125,7 @@ const App = () => {
     })
   }, [isMenuVisible, dataIndex])
 
+  // To Handle Menu Click
   const handleMenuClick = () => {
     isMenuVisible === false
       ? setIsMenuVisible(true)
@@ -128,6 +134,7 @@ const App = () => {
     setActiveState(0)
   }
 
+  // To Handle Enter Click
   const handleEnterClick = () => {
     if (isMenuVisible) {
       dataIndex === 0 && setActiveComponent(activeState)
@@ -160,6 +167,7 @@ const App = () => {
     }
   }
 
+  // To Handle Play Pause
   const handlePlayAndPause = () => {
     if (play) {
       let audio = document.getElementsByClassName('audio')[0]
