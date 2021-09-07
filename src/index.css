@@ -17,6 +17,7 @@
   background: linear-gradient(rgb(227, 227, 227) -35%, rgb(250, 50, 240) 100%);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /* min-width: fit-content; */
+  margin-top: 50px;
 }
 
 .cont {
@@ -267,6 +268,7 @@
   pointer-events: none !important;
   user-select: none !important;
   width: 432px;
+  height: 200px;
   /* max-width: 100%;
 }
 .coverflow img {
@@ -293,8 +295,8 @@
 }
 
 .thumbnail img {
-  height: 110px;
-  width: 110px;
+  height: 210px;
+  width: 210px;
 }
 
 .thumbnail {
@@ -365,22 +367,22 @@
 
 .timer {
   position: absolute;
-  left: 20px;
-  bottom: 35px;
+  left: 150px;
+  bottom: 750px;
   font-size: small;
 }
 
 .time {
   position: absolute;
-  right: 20px;
-  bottom: 36px;
+  right: 150px;
+  bottom: 750px;
   font-size: small;
 }
 
 .volumeController {
   position: absolute;
-  top: 45%;
-  right: 30px;
+  top: 22%;
+  right: 180px;
   font-weight: bolder;
   color: #505050;
   font-family: sans-serif;
@@ -394,8 +396,10 @@
 
 /* ---------- games --------------- */
 .gameContainer {
-  height: 302px;
-  width: 435px;
+  height: 280px;
+  width: 433px;
+  position: absolute;
+  top: 94px;
   background: linear-gradient(rgb(177, 181, 192) 0%, rgb(104, 110, 122) 100%);
   z-index: 100;
 }
@@ -410,7 +414,7 @@
 .setting {
   padding-top: 20px;
   position: absolute;
-  top: 24px;
+  top: 94px;
   bottom: 0px;
   z-index: 100;
   background: white;

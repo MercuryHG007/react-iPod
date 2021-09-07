@@ -36,7 +36,8 @@ const MusicPlayer = () => {
     }, [play, setSongID] )
 
     const setDuration = () => {
-        let duration = parseInt(getElement('audio'.duration));
+        let music = getElement('audio');
+        let duration = parseInt(getElement(music.duration));
         let min = parseInt(duration / 60);
         let sec = parseInt(duration % 60);
 
@@ -79,7 +80,7 @@ const MusicPlayer = () => {
 
             <div className='content' >
                 <div className='thumbnail' >
-                    <img src={track.image} alt='' />
+                    <img src={track.images} alt='' />
                 </div>
                 <div className='description' >
                     <div className='songName' > {track.name} </div>
@@ -101,7 +102,7 @@ const MusicPlayer = () => {
 
                 <span className='timer' > 0.00 </span>
                 <div className='fillup' />
-                <span className='timer' />
+                <span className='time' > 0.00 </span>
             </div>
 
             <div className='volumeController' />
